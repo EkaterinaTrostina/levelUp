@@ -1,0 +1,38 @@
+.composition
+    padding: 80px 30px 40px 30px
+    background: linear-gradient(45deg, #EECFBA, #C5DDE8)
+    &__wrap
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        grid-column-gap: 15px
+        justify-items: center
+        align-items: center
+    &__item
+        padding: 15px
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        align-items: center
+        justify-items: center
+        grid-column-gap: 30px
+        margin-top: 20px
+        border: 1px solid #000
+        transition: .5s linear
+        &:first-child
+            margin-top: 0
+        &:hover
+            animation: iconsbeat 2s   
+    &__img
+        img
+            width: 100%
+            max-width: 150px
+            border: 2px dashed rgba(131, 68, 173, .8)
+            border-radius: 50%
+            height: auto
+            padding: 10px
+    &__descr
+        text-align: justify
+        font-weight: 600
+        font-size: 16px
+        span
+            color: $main-color
+            font-size: 20px
